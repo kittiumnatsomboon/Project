@@ -1,11 +1,12 @@
 @import './base.css';
 
-#app {
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
-}
+  color: black;
+} */
 
 a,
 .green {
@@ -23,6 +24,7 @@ a,
 
 @media (min-width: 1024px) {
   body {
+    color: black;
     display: flex;
     place-items: center;
   }

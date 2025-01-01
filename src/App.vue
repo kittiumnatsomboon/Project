@@ -5,12 +5,20 @@ import HelloWorld from './components/HelloWorld.vue'
 <script>
 export default {
     
-  name:'App'
+  name:'App',
+  data(){
+      return {
+        fname:"kitti",
+        lastname:"umnatsomboon",
+        age:15
+      }
+  }
 }
 </script>
 <template>
   <header>
-    champ
+    <div>ชื่อ-นามสกุล {{ fname }} {{ lastname }}</div>
+    <div></div>
 
     
   </header>

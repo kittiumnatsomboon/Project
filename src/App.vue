@@ -10,7 +10,13 @@ export default {
       return {
         fname:"kitti",
         lastname:"umnatsomboon",
-        age:15
+        age:15,
+        address:"<b>กรุงเทพ</b>"
+      }
+  },
+  methods:{
+      getfullname(){
+        return this.fname + this.lastname
       }
   }
 }
@@ -18,8 +24,8 @@ export default {
 <template>
   <header>
     <div>ชื่อ-นามสกุล {{ fname }} {{ lastname }}</div>
-    <div></div>
-
+    <div>ที่อยู่<span v-html="address"></span></div>
+    <div>{{ getfullname() }}</div>
     
   </header>
 

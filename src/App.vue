@@ -11,7 +11,10 @@ export default {
         fname:"kitti",
         lastname:"umnatsomboon",
         age:15,
-        address:"<b>กรุงเทพ</b>"
+        address:"<b>กรุงเทพ</b>",
+        picture:"https://lh6.googleusercontent.com/proxy/LVIvOTNmgyyLbTFTRm2hy5hMfKbzGWIDSJ_txhczMof2eU_ByW-QxN86_6I5xp-9CnAQaxlZYEaRwzlonqp3YAUyrXBry0C2lrmAk8g1y-Zm7yjAaXYdl3hZyJmOpOcOgIN_iZGolVEhNms",
+        width:"200px",
+        height:"100px"
       }
   },
   methods:{
@@ -26,7 +29,8 @@ export default {
     <div>ชื่อ-นามสกุล {{ fname }} {{ lastname }}</div>
     <div>ที่อยู่<span v-html="address"></span></div>
     <div>{{ getfullname() }}</div>
-    
+    <img v-bind:width="width" v-bind:height="height" v-bind:src="picture">
+    <input name="" v-text="Text" id="">    
   </header>
 
   <RouterView />
